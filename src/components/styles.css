@@ -1,6 +1,6 @@
 .input{
     display: flex;
-    width: 90%;
+    width: 95%;
     position: relative;
     align-items: center;
 }
@@ -46,14 +46,44 @@
     box-shadow: 0 0 5px black;
 }
 
+.container{
+    display: flex;
+    width: 95%;
+    margin-top: 5%;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.todos{
+    display: flex;
+    width: 47.5%;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(50,195,205);
+
+}
+
+.todos__heading{
+    font-size: 20px;
+    color: white;
+}
+
 .todos__single{
     display: flex;
-    width: 89.5%;
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
     background-color: yellow;
+    transition: 0.2s;
+
 }
+.todos__single:hover{
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
+}
+
 
 .todos_single--text{
     flex: 1;
@@ -68,8 +98,11 @@
     }
     .todos{
         width: 95%;
+        margin-bottom: 10px;
     }
-    .todos__single{
-        width: 100%;
+
+    .container{
+        width: 95%;
+        flex-direction: column;
     }
 }
